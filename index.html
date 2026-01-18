@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Fire Top-Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button onclick="setLang('bn')">বাংলা</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<!-- Hero Section -->
+ <div class="diamonds"></div>
+<section class="hero">
+  <h1 id="title">Instant Free Fire Diamond Top-Up</h1>
+  <p id="subtitle">দ্রুত ও নিরাপদ ফ্রি ফায়ার ডায়মন্ড টপ-আপ</p>
+  <button class="cta" onclick="scrollToTopup()">
+    <span id="ctaText">Top-Up Now</span>
+  </button>
+</section>
+
+<!-- Top-Up Section -->
+<section class="topup" id="topup">
+  <h2 id="topupTitle">Top-Up Details</h2>
+
+  <input type="text" id="playerId" placeholder="Player ID">
+  <select id="server">
+    <option>Bangladesh</option>
+    <option>India</option>
+    <option>Global</option>
+  </select>
+
+  <div class="packages">
+    <div class="card" onclick="selectPack(25)">25 💎</div>
+    <div class="card" onclick="selectPack(50)">50 💎</div>
+    <div class="card" onclick="selectPack(115)">115 💎</div>
+    <div class="card" onclick="selectPack(240)">240 💎</div>
+    <div class="card" onclick="selectPack(355)">355 💎</div>
+    <div class="card" onclick="selectPack(480)">480 💎</div>
+    <div class="card" onclick="selectPack(505)">505 💎</div>  
+    <div class="card" onclick="selectPack(610)">610 💎</div>
+    <div class="card" onclick="selectPack(850)">850 💎</div>
+    <div class="card" onclick="selectPack(1090)">1090 💎</div>
+    <div class="card" onclick="selectPack(1240)">1240 💎</div>
+    <div class="card" onclick="selectPack(2530)">2530 💎</div>
+    <div class="card" onclick="selectPack(5060)">5060 💎</div>
+    <div class="card" onclick="selectPack(10120)">10120 💎</div>
+  </div>
+
+  <h3 id="priceText">Price: ৳0</h3>
+
+  <!-- Payment -->
+  <h2 id="paymentTitle">Payment Method</h2>
+  <select id="paymentMethod">
+    <option>bKash</option>
+    <option>Nagad</option>
+  </select>
+
+  <p id="paymentInfo">
+     Bikash Cash Out to <strong>01744-680827</strong>
+  </p>
+
+   <p id="paymentInfo-nagad">
+     Nagad Send money to <strong>01707-328506</strong>
+  </p>
+
+  <input type="text" placeholder="Transaction ID">
+  <input type="file">
+
+  <button class="cta" onclick="submitOrder()">
+    <span id="submitText">Submit Order</span>
+  </button>
+
+  <p id="status"></p>
+</section>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/8801707328506" target="_blank">
+  WhatsApp
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
